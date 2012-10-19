@@ -1,0 +1,11 @@
+/* style.scss */
+/* line 2, ../sass/style.scss */
+#navbar {
+  width: 80%;
+  height: 23px;
+}
+
+/* line 8, ../sass/style.scss */
+p {
+  color: green;
+}
