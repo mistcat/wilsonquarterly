@@ -24,6 +24,10 @@ class App < Sinatra::Base
   get "/" do
     erb :wilsonquarterlyhomepage
   end
+  
+  get "/article" do
+    erb :wq_article
+  end
 
   get "/stylesheets/*.css" do |path|
     content_type "text/css", charset: "utf-8"
