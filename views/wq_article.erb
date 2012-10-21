@@ -1,14 +1,12 @@
 <div class="row">
     <div class="three columns">
-      <h1><img src="http://placehold.it/300x400&text=WilsonQuarterly" /></h1>
-      <ul class="nav-bar vertical">
-        <li><a href="#">Current Issue</a></li>
-        <li><a href="#">In Essence</a></li>
-        <li><a href="#">Book Reviews</a></li>
-        <li><a href="#">Previous Issues</a></li>
-        <li><a href="#">Subscribe</a></li>
-        <li><a href="#">About</a></li>
-      </ul> 
+     <%= erb :menu %>
+     <div class="panel">
+      <img src="http://placehold.it/300x400&text=Subscribe" />
+     </div>
+     <div class="panel">
+      <img src="http://placehold.it/300x400&text=Download%20Our%20App" />
+     </div>
     </div>
     <div class="nine columns">
       
@@ -29,11 +27,12 @@
 
       <div class="row">
         <div><h4>Summer 2012</h4></div>
-        <div><h1>Beyond The Brain</h1>  <span class="[radius, round] [secondary, alert, success] label">Share</span></div>
+        <div class="row">
+        <div class="seven columns"><h1>Beyond The Brain</h1></div><div class="five columns"><span class="[medium, round] button">Share</span></div></div>
       </div>
       <div class="row">
         <div class="eight column">
-          <img src="http://placehold.it/600x600&text=FeaturedImage" />
+          <img src="http://placehold.it/400x400&text=FeaturedImage" />
           <p>In the 1990s, scientists declared
           that schizophrenia and other
           psychiatric illnesses were pure
@@ -70,16 +69,7 @@
           Psychoanalysis and even psychotherapy were said to be on their way out. Psychiatry
           would focus on real disease, and psychiatric researchers would pinpoint the biochemical
           causes of illness and neatly design drugs to target them.</p>
-            <div class="panel right">
-              <h4 class="text-center">Most Viewed Articles</h4>
-              <ul class="link-list vertical">
-                <% 5.times do %>
-                <li><a href="#">This is a Most Viewed Article</a>
-                  <p>Read this article because it
-                  relates to this topic.</p></li>
-                <% end %>
-              </ul>
-            </div>
+           
         </div>
         <div class="four column">
             <div class="panel">
@@ -92,7 +82,43 @@
                 <% end %>
               </ul>
             </div>
+             <div style="float:left">
+             <dl class="tabs two-up">
+                <dd class="active"><a href="#simple1">Most Viewed</a></dd>
+                <dd><a href="#simple2">Most Commented</a></dd>                
+            </dl>
+
+            <ul class="tabs-content">
+              <li class="active" id="simple1Tab">  <h4 class="text-center">Most Viewed Articles</h4>
+              <ul class="link-list vertical">
+                <% 5.times do %>
+                <li><a href="#">This is a Popular Article</a>
+                  <p>Read this article because it
+                  is very popular in this topic.</p></li>
+                <% end %>
+              </ul> </li>
+              <li id="simple2Tab"> <h4 class="text-center">Most Commented Articles</h4>
+              <ul class="link-list vertical">
+                <% 5.times do %>
+                <li><a href="#">This is a Commented Article</a>
+                  <p>Read this article because it was heavily commented.</p></li>
+                <% end %>
+              </ul></li>
+            </ul>
+            </div>
         </div>
       </div> <!--- end row -->
     </div> <!--- end right column -->
-</div> <!--- end top section-->        
+</div> <!--- end top section-->   
+<div class="row">
+  <div class="nine columns"><h4>Comments (12):</h4></div>
+  <div class="three columns"><h6><a href="#">Login</a> to post comments</h6></div>
+</div>     
+<div class="row">
+<h7>05/22/12 11:29 EDT | John Walker | Report as Inappropriate</h7>
+<p>“Nulla facilisi. Sed vestibulum nulla eu metus. Aliquam consectetuer nulla nec enim. Suspendisse pede. Proin enim.
+Donec leo. Curabitur tincidunt.…”</p>
+<h7>05/22/12 11:29 EDT | John Walker | Report as Inappropriate</h7>
+<p>“Nulla facilisi. Sed vestibulum nulla eu metus. Aliquam consectetuer nulla nec enim. Suspendisse pede. Proin enim.
+Donec leo. Curabitur tincidunt.…”</p>
+</div>
