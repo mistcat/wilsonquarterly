@@ -11,7 +11,7 @@
     <div class="nine columns">
       
       <div class="row">
-        <div class="row three columns push-six">
+        <div class="row three columns">
           <a href="#">Login</a> | <a href="#">My Account</a>
         </div>  
             
@@ -42,33 +42,18 @@
           factors are among the causes,
           and must be part of the cure.
           Now they are recognizing that.</p>
-          <p>By the time I met her, Susan was a success story. She was a
-          student at the local community college. She had her own
-          apartment, and she kept it in reasonable shape. She did not
-          drink, at least not much, and she did not use drugs, if you did not
-          count marijuana. She was a big, imposing black woman who
-          defended herself aggressively on the street, but she had not
-          been jailed for years. All this was striking because Susan clearly
-          met criteria for a diagnosis of schizophrenia, the most severe
-          and debilitating of psychiatric disorders. She thought that people
-          listened to her through the heating pipes in her apartment. She
-          heard them muttering mean remarks.</p>
-          <p>Twenty years ago, most psychiatrists would have agreed
-          that Susan had a brain disorder for which the only
-          reasonable treatment was medication. They had learned
-          to reject the old psychoanalytic ideas about
-          schizophrenia, and for good reasons. The pain of this
-          mistake still reverberates through the profession. In
-          psychiatry it is now considered not only incorrect but
-          morally wrong to see the parents as responsible for their
-          child’s illness. I remember talking to a young psychiatrist
-          in the late 1990s, back when I was doing an
-          anthropological study of psychiatric training.</p>
-          <p>To signal how much psychiatry had changed since its tweedy psychoanalytic days, the
-          National Institute of Mental Health designated the 1990s as the “decade of the brain.”
-          Psychoanalysis and even psychotherapy were said to be on their way out. Psychiatry
-          would focus on real disease, and psychiatric researchers would pinpoint the biochemical
-          causes of illness and neatly design drugs to target them.</p>
+         
+         <% 
+         logged_in = true
+          if logged_in = true 
+            { 
+              erb :full_aticle 
+            } 
+            else 
+            { 
+              erb :paywall
+            }
+         %>
            
         </div>
         <div class="four column">
